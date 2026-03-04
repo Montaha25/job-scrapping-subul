@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  --p0: #FF2D7A;
+  --p1: #C3379B;
+  --p2: #7A3FB0;
+  --grad: linear-gradient(135deg, #FF2D7A 0%, #C3379B 50%, #7A3FB0 100%);
+  --green: #16a34a;
+  --red: #dc2626;
+  --amber: #d97706;
+  --bg: #f7f6fc;
+  --white: #fff;
+  --border: #ede8f5;
+  --text: #1a1025;
+  --muted: #6b5c80;
+  --light: #f0ecfa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Sora', 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+
+/* Inputs focus ring */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--p2) !important;
+  box-shadow: 0 0 0 3px rgba(122, 63, 176, 0.10);
+}
